@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyntaxEdit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pages>
+    <DefaultPage>
+      <Header />
+      <Footer />
+    </DefaultPage>
+  </Pages>
+  <DisplayStrings />
+  <Selection>
+    <SelectionRect>
+      <Location>
+        <X>0</X>
+        <Y>357</Y>
+      </Location>
+      <Size>
+        <Width>24</Width>
+        <Height>2</Height>
+      </Size>
+      <X>0</X>
+      <Y>357</Y>
+      <Width>24</Width>
+      <Height>2</Height>
+    </SelectionRect>
+    <Options>UseColors OverwriteBlocks SelectLineOnTripleClick CopyLineWhenEmpty SelectWordOnCtrlClick</Options>
+  </Selection>
+  <Gutter>
+    <Options>PaintLineNumbers PaintBookMarks PaintLineModificators</Options>
+  </Gutter>
+  <Margin>
+    <Visible>false</Visible>
+  </Margin>
+  <LineStyles />
+  <LineSeparator />
+  <Printing>
+    <Footer />
+    <Header />
+  </Printing>
+  <WhiteSpace />
+  <TextSource>
+    <Position>
+      <X>0</X>
+      <Y>357</Y>
+    </Position>
+    <Lexer>
+      <Scheme>
+        <Author>Quantum Whale, LLC.</Author>
+        <Copyright>Copyright (c) 2004 - 2014 Quantum Whale LLC.</Copyright>
+        <FileType>gas</FileType>
+        <Version>1.5</Version>
+        <Styles>
+          <Style>
+            <Name>idents</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>numbers</Name>
+            <ForeColor>ControlText</ForeColor>
+          </Style>
+          <Style>
+            <Name>reswords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>comments</Name>
+            <ForeColor>Green</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>xmlcomments</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>symbols</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>whitespace</Name>
+            <ForeColor>WindowText</ForeColor>
+          </Style>
+          <Style>
+            <Name>strings</Name>
+            <ForeColor>Maroon</ForeColor>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>directives</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>htmlparams</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>syntax errors</Name>
+            <ForeColor>Red</ForeColor>
+          </Style>
+          <Style>
+            <Name>codes nippets</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>255:180:228:180</BackColor>
+          </Style>
+          <Style>
+            <Name>GabReservedWords</Name>
+            <ForeColor>Blue</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabTokenWithBrackets</Name>
+            <ForeColor>Gray</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabFunctionIntrinsicDebug</Name>
+            <ForeColor>White</ForeColor>
+            <BackColor>Red</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+          <Style>
+            <Name>GabVariable</Name>
+            <ForeColor>Teal</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabVariableSystemDefined</Name>
+            <ForeColor>Teal</ForeColor>
+            <FontStyle>Bold Italic</FontStyle>
+          </Style>
+          <Style>
+            <Name>GabGui</Name>
+            <ForeColor>OrangeRed</ForeColor>
+          </Style>
+          <Style>
+            <Name>GabProgramSubStartEnd</Name>
+            <ForeColor>Black</ForeColor>
+            <BackColor>LightGray</BackColor>
+            <FontStyle>Bold</FontStyle>
+            <PlainText>true</PlainText>
+          </Style>
+        </Styles>
+      </Scheme>
+    </Lexer>
+    <TextStrings>
+      <Lines>
+        <string>Program.Sub.ScreenSU.Start</string>
+        <string>Gui.Form..Create</string>
+        <string>Gui.Form..Caption("Issue Material")</string>
+        <string>Gui.Form..Size(16515,11100)</string>
+        <string>Gui.Form..MinX(0)</string>
+        <string>Gui.Form..MinY(0)</string>
+        <string>Gui.Form..Position(0,0)</string>
+        <string>Gui.Form..BackColor(-2147483633)</string>
+        <string>Gui.Form..MousePointer(0)</string>
+        <string>Gui.Form..Event(UnLoad,Form_UnLoad)</string>
+        <string>Gui.Form.GsMain.Create(GsGridControl)</string>
+        <string>Gui.Form.GsMain.Size(16305,10155)</string>
+        <string>Gui.Form.GsMain.Position(75,585)</string>
+        <string>Gui.Form.GsMain.Event(RowCellClick,GsMain_RowCellClick)</string>
+        <string>Gui.Form.GsMain.Anchor(15)</string>
+        <string>Gui.Form.proBar1.Create(ProgressBar)</string>
+        <string>Gui.Form.proBar1.Size(3735,120)</string>
+        <string>Gui.Form.proBar1.Position(75,390)</string>
+        <string>Gui.Form.lblStatus.Create(Label,"Label",True,6480,255,0,60,120,True,0,"Arial",8,-2147483633,0)</string>
+        <string>Program.Sub.ScreenSU.End</string>
+        <string />
+        <string>Program.Sub.Preflight.Start</string>
+        <string>V.Global.sRet.Declare</string>
+        <string>Program.Sub.Preflight.End</string>
+        <string />
+        <string>Program.Sub.Main.Start</string>
+        <string>f.Intrinsic.Control.Try</string>
+        <string>	v.Local.sError.Declare	</string>
+        <string />
+        <string>	F.ODBC.Connection!conx.OpenCompanyConnection(300)</string>
+        <string />
+        <string>	gui.Form.lblStatus.Caption("Loading...")</string>
+        <string>	F.Intrinsic.Control.CallSub("CreateContextMenus")</string>
+        <string>	</string>
+        <string>	gui.Form..Show</string>
+        <string>	</string>
+        <string>	F.Intrinsic.Control.CallSub("LoadDTJobCommitments")</string>
+        <string>	</string>
+        <string>F.Intrinsic.Control.Catch</string>
+        <string>	F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}GAB Version: {5}}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	f.Intrinsic.Control.CallSub("Unload")</string>
+        <string>F.Intrinsic.Control.EndTry	</string>
+        <string>Program.Sub.Main.End</string>
+        <string />
+        <string>Program.Sub.Refresh.Start</string>
+        <string>f.Intrinsic.Control.Try</string>
+        <string>	v.Local.sError.Declare</string>
+        <string>	</string>
+        <string>	F.Intrinsic.Control.CallSub("LoadDTJobCommitments")</string>
+        <string />
+        <string>F.Intrinsic.Control.Catch</string>
+        <string>	F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}GAB Version: {5}}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	f.Intrinsic.Control.CallSub("Unload")</string>
+        <string>F.Intrinsic.Control.EndTry	</string>
+        <string>Program.Sub.Refresh.End</string>
+        <string />
+        <string>Program.Sub.LoadDTJobCommitments.Start</string>
+        <string>f.Intrinsic.Control.Try</string>
+        <string>	v.Local.sError.Declare</string>
+        <string>	v.Local.iCnt.Declare</string>
+        <string>	v.Local.sFilter.Declare</string>
+        <string>	v.Local.sPart.Declare</string>
+        <string>	v.Local.sLocation.Declare</string>
+        <string>	v.Local.fOnhand.Declare	</string>
+        <string>	</string>
+        <string>	gui.Form.lblStatus.Caption("Getting commitments...")</string>
+        <string>	F.Intrinsic.Control.If(V.DataTable.dtJobCommitments.Exists)</string>
+        <string>		F.Data.DataTable.Close("dtJobCommitments")</string>
+        <string>	F.Intrinsic.Control.EndIf	</string>
+        <string>	F.Data.DataTable.CreateFromSQL("dtJobCommitments", "conx", "Select RTrim(A.Part) as Part,A.Location,B.Description,H.Part as MfgPart,H.Product_Line as MfgPL,H.Customer,H.Flag_Hold,H.Priority, A.Job, A.Suffix, A.Sequence, (A.Qty_Committed - A.Qty_Issued) as QtyRequired, B.Qty_OnHand, A.Date_Due,(B.Qty_OnOrder_Wo + B.Qty_OnOrder_PO) as QtyOnOrder, B.Qty_Required as Total_Required from V_JOB_COMMITMENTS A left join V_Inventory_Mstr B on A.Part = B.Part and A.Location = B.Location left join V_Job_Header H on A.Job = H.Job and A.Suffix = H.Suffix", True)	</string>
+        <string>	f.Data.DataTable.AddColumn("dtJobCommitments","RunningTotal","Float",0)</string>
+        <string>	</string>
+        <string>	'Clone</string>
+        <string>	f.Intrinsic.Control.If(v.DataTable.dtJCMT.Exists)</string>
+        <string>		f.Data.DataTable.Close("dtJCMT")</string>
+        <string>	f.Intrinsic.Control.EndIf</string>
+        <string>	f.Data.DataTable.Clone("dtJobCommitments","dtJCMT",True)	</string>
+        <string>	f.Data.DataTable.AddColumn("dtJCMT","Ready","String","")	</string>
+        <string>	</string>
+        <string>	'Get Distinct Part</string>
+        <string>	gui.Form.lblStatus.Caption("Getting distinct Parts...")</string>
+        <string>	f.Data.DataView.Create("dtJobCommitments","dvJobCommitments")</string>
+        <string>	f.Intrinsic.Control.If(v.DataTable.Parts.Exists)</string>
+        <string>		f.Data.DataTable.Close("Parts")</string>
+        <string>	f.Intrinsic.Control.EndIf</string>
+        <string>	f.Data.DataView.ToDataTableDistinct("dtJobCommitments","dvJobCommitments","Parts","Part*!*Location",True)</string>
+        <string>	f.Data.DataView.Create("Parts","dvParts")</string>
+        <string>	</string>
+        <string>	'Turn on indicator</string>
+        <string>	f.Intrinsic.Control.If(v.DataTable.dtJobCommitments.RowCount,&gt;,0)</string>
+        <string>		gui.Form.proBar1.Max(v.DataTable.Parts.RowCount)</string>
+        <string>		gui.Form.proBar1.Visible(True)</string>
+        <string>	f.Intrinsic.Control.EndIf	</string>
+        <string>	</string>
+        <string>	'Loop each Part in the distinct Part,Location list and do the MRP calculation</string>
+        <string>	gui.Form.lblStatus.Caption("MRP calculation...")</string>
+        <string>	f.Intrinsic.Control.For(v.Local.iCnt,0,v.DataTable.Parts.RowCount--,1)</string>
+        <string>		gui.Form.proBar1.Value(v.Local.iCnt)</string>
+        <string>		v.Local.sPart.Set(v.DataTable.Parts(v.Local.iCnt).Part!FieldValString)</string>
+        <string>		v.Local.sLocation.Set(v.DataTable.Parts(v.Local.iCnt).Location!FieldValString)</string>
+        <string>		f.Intrinsic.String.Build("Part = '{0}' and Location = '{1}'",v.Local.sPart.PSQLFriendly,v.Local.sLocation,v.Local.sFilter)</string>
+        <string>		f.Data.DataView.SetFilter("dtJobCommitments","dvJobCommitments",v.Local.sFilter)</string>
+        <string>		f.Data.DataView.SetSort("dtJobCommitments","dvJobCommitments","Date_Due asc,Job,Suffix,Sequence")</string>
+        <string>		f.Data.DataView.ToDataTable("dtJobCommitments","dvJobCommitments","dtTemp",True)</string>
+        <string>		'Running Total Requirement</string>
+        <string>		v.Local.fOnhand.Set(v.DataTable.dtTemp(0).Qty_Onhand!FieldValString)</string>
+        <string>		f.Data.DataTable.RunningTotal("dtTemp","QtyRequired",v.Local.fOnhand,"-","RunningTotal")</string>
+        <string>		f.Data.DataTable.AddExpressionColumn("dtTemp","Ready","String","IIF([RunningTotal] &gt;= 0,'Y','')")</string>
+        <string>		</string>
+        <string>		f.Data.DataTable.Merge("dtTemp","dtJCMT",True,3)</string>
+        <string>		f.Data.DataTable.Close("dtTemp")</string>
+        <string>		</string>
+        <string>	f.Intrinsic.Control.Next(v.Local.iCnt)</string>
+        <string>	gui.Form.proBar1.Visible(False)</string>
+        <string>	</string>
+        <string>	f.Data.DataTable.Close("dtJobCommitments")</string>
+        <string>	F.Data.DataView.Create("dtJCMT","dvJCMT",22,"","Date_Due ASC, Job ASC, Suffix ASC")</string>
+        <string>	f.Data.DataView.ToDataTable("dtJCMT","dvJCMT","dtJCMT2",True)</string>
+        <string>	f.Data.DataTable.Close("dtJCMT")</string>
+        <string>	f.Data.DataView.Create("dtJCMT2","dvJCMT2")</string>
+        <string>	f.Data.DataView.ToDataTable("dtJCMT2","dvJCMT2","dtJCMT",True)</string>
+        <string>	f.Data.DataTable.Close("dtJCMT2")</string>
+        <string>	</string>
+        <string>	gui.Form.lblStatus.Caption("Formatting grid...")</string>
+        <string>	F.Intrinsic.Control.CallSub("LoadGVJobCommitments")</string>
+        <string>	gui.Form.lblStatus.Caption("")</string>
+        <string>	</string>
+        <string>F.Intrinsic.Control.Catch</string>
+        <string>	F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}GAB Version: {5}}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	f.Intrinsic.Control.CallSub("Unload")</string>
+        <string>F.Intrinsic.Control.EndTry	</string>
+        <string>Program.Sub.LoadDTJobCommitments.End</string>
+        <string />
+        <string>Program.Sub.LoadGVJobCommitments.Start</string>
+        <string>f.Intrinsic.Control.Try</string>
+        <string>	v.Local.sError.Declare</string>
+        <string>	</string>
+        <string>	Gui.Form.GsMain.AddGridviewFromDatatable("gvJobCommitments", "dtJCMT")</string>
+        <string>	</string>
+        <string>	Gui.Form.GsMain.SuspendLayout()</string>
+        <string>	</string>
+        <string>	'General grid format</string>
+        <string>	Gui.Form.GsMain.SetGridViewProperty("gvJobCommitments","AllowSort",True)</string>
+        <string>	Gui.Form.GsMain.SetGridViewProperty("gvJobCommitments","AllowFilter",True)</string>
+        <string>	Gui.Form.GsMain.SetGridViewProperty("gvJobCommitments","OptionsFindAlwaysVisible",True)</string>
+        <string>	Gui.Form.GsMain.SetGridViewProperty("gvJobCommitments","EnableAppearanceOddRow",False)</string>
+        <string>	Gui.Form.GsMain.SetGridViewProperty("gvJobCommitments","OptionsViewShowAutoFilterRow",True)</string>
+        <string>	Gui.Form.GsMain.SetGridViewProperty("gvJobCommitments","OptionsViewColumnAutoWidth",False)	</string>
+        <string>	Gui.Form.GsMain.SetGridViewProperty("gvJobCommitments","ColumnPanelRowHeight","35")		</string>
+        <string>	'Set color based on Ready</string>
+        <string>	gui.Form.GsMain.AddStyleFormatCondition("gvJobCommitments","Ready","tagReady","equal","Y")</string>
+        <string>	gui.Form.GsMain.SetStyleFormatConditionProperty("gvJobCommitments","Ready","tagReady","backcolor","LightGreen")		</string>
+        <string>	'CellForeColor</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Part","CellForeColor",V.Color.Blue)</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Job","CellForeColor",V.Color.Blue)</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Part","CellFontUnderline",True)</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Job","CellFontUnderline",True)	</string>
+        <string>	'Width</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Part","MinWidth","160")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Location","MinWidth","25")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Description", "MinWidth","200")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPart", "MinWidth","160")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPL", "MinWidth","30")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Flag_Hold", "MinWidth","30")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Priority", "MinWidth","30")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Customer", "MinWidth","60")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Job", "MinWidth","50")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Suffix", "MinWidth","50")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Sequence", "MinWidth","60")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","QtyRequired", "MinWidth","90")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Qty_OnHand", "MinWidth","90")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","QtyOnOrder", "MinWidth","90")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Total_Required", "MinWidth","90")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","RunningTotal", "MinWidth","90")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Ready", "MinWidth","45")</string>
+        <string>	'HeaderHAlignment</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Location", "HeaderHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPL","HeaderHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Flag_Hold","HeaderHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Priority", "HeaderHAlignment","center")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Job", "HeaderHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Suffix", "HeaderHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Sequence", "HeaderHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Customer", "HeaderHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Date_Due", "HeaderHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","QtyRequired", "HeaderHAlignment","far")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Qty_OnHand", "HeaderHAlignment","far")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","QtyOnOrder", "HeaderHAlignment","far")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Total_Required", "HeaderHAlignment","far")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","RunningTotal", "HeaderHAlignment","far")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Ready", "HeaderHAlignment","Center")</string>
+        <string>	'Cell Alignment</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPL","CellHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Flag_Hold","CellHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Priority", "CellHAlignment","center")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Location", "CellHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Job", "CellHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Suffix", "CellHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Sequence", "CellHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Customer", "CellHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Date_Due", "CellHAlignment","center")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Ready", "CellHAlignment","center")	</string>
+        <string>	'For Rowcell Click</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Part","AllowEdit",False)</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Part","ReadOnly",True)</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Job","AllowEdit",False)</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Job","ReadOnly",True)	</string>
+        <string>	'Caption</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","QtyRequired","Caption", "Qty Required")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","QtyOnOrder","Caption", "Qty On Order")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","RunningTotal","Caption", "Running Total")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Total_Required","Caption", "Total Required")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Qty_Onhand","Caption", "On Hand")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Date_Due","Caption", "Due Date")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Location","Caption", "Locn")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Sequence","Caption", "Seq")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPart","Caption", "Mfg Part")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPL","Caption", "Mfg PL")	</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Flag_Hold","Caption", "Hold")</string>
+        <string>	'Fixed left</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Part","Fixed","Left")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Location","Fixed","Left")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Description","Fixed","Left")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPart","Fixed","Left")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPL","Fixed","Left")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Flag_Hold","Fixed","Left")</string>
+        <string>	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Priority","Fixed","Left")	</string>
+        <string />
+        <string>	gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Date_Due","DisplayCustomDateTime","d")</string>
+        <string />
+        <string>	Gui.Form.GsMain.ResumeLayout()</string>
+        <string>	Gui.Form.GsMain.MainView("gvJobCommitments")</string>
+        <string>	</string>
+        <string>F.Intrinsic.Control.Catch</string>
+        <string>	F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}GAB Version: {5}}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	f.Intrinsic.Control.CallSub("Unload")</string>
+        <string>F.Intrinsic.Control.EndTry	</string>
+        <string>Program.Sub.LoadGVJobCommitments.End</string>
+        <string />
+        <string>Program.Sub.GsMain_RowCellClick.Start</string>
+        <string>f.Intrinsic.Control.Try	</string>
+        <string>	v.Local.sError.Declare</string>
+        <string>	</string>
+        <string>	F.Intrinsic.Control.If(V.Args.Column, =, "Part")</string>
+        <string>		F.Intrinsic.String.Concat(V.DataTable.dtJCMT(V.Args.RowIndex).Part!FieldVal, "!*! ", V.Global.sRet)</string>
+        <string>		F.Global.General.CallWrapperAsync(300010, V.Global.sRet)</string>
+        <string>	F.Intrinsic.Control.ElseIf(V.Args.Column, =, "Job")</string>
+        <string>		F.Intrinsic.String.Build("{0}!*!{1}!*! !*! !*! !*! !*! ", V.DataTable.dtJCMT(V.Args.RowIndex).Job!FieldVal, V.DataTable.dtJCMT(V.Args.RowIndex).Suffix!FieldVal,V.Global.sRet)</string>
+        <string>		F.Global.General.CallWrapperAsync(450150, V.Global.sRet)</string>
+        <string>	F.Intrinsic.Control.EndIf</string>
+        <string>	</string>
+        <string>F.Intrinsic.Control.Catch</string>
+        <string>	F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}GAB Version: {5}}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	f.Intrinsic.Control.CallSub("Unload")</string>
+        <string>F.Intrinsic.Control.EndTry		</string>
+        <string>Program.Sub.GsMain_RowCellClick.End</string>
+        <string />
+        <string>Program.Sub.CreateContextMenus.Start</string>
+        <string>f.Intrinsic.Control.Try	</string>
+        <string>	v.Local.sError.Declare</string>
+        <string>	</string>
+        <string>	Gui.Form..ContextMenuCreate("ctxJobCommitments")</string>
+        <string>	Gui.Form.GsMain.ContextMenuAttach("ctxJobCommitments")</string>
+        <string>	</string>
+        <string>	Gui.Form..ContextMenuAddItem("ctxJobCommitments","Export",0,"Export")	</string>
+        <string>	Gui.Form..ContextMenuAddItem("ctxJobCommitments","Refresh",0,"Refresh")	</string>
+        <string>	Gui.Form..ContextMenuAddItem("ctxJobCommitments","Clear Sorting",0,"Clear Sorting")</string>
+        <string>	</string>
+        <string>	Gui.Form..ContextMenuSetItemEventHandler("ctxJobCommitments","Export","MenuClickExport")</string>
+        <string>	Gui.Form..ContextMenuSetItemEventHandler("ctxJobCommitments","Refresh","Refresh")	</string>
+        <string>	Gui.Form..ContextMenuSetItemEventHandler("ctxJobCommitments","Clear Sorting","ClearSorting")</string>
+        <string>	</string>
+        <string>F.Intrinsic.Control.Catch</string>
+        <string>	F.Intrinsic.String.Build("Project: {0}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}GAB Version: {5}}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	f.Intrinsic.Control.CallSub("Unload")</string>
+        <string>F.Intrinsic.Control.EndTry	</string>
+        <string>Program.Sub.CreateContextMenus.End</string>
+        <string />
+        <string>Program.Sub.MenuClickExport.Start</string>
+        <string>	F.Intrinsic.Control.Try</string>
+        <string>	V.Local.sError.Declare</string>
+        <string>	</string>
+        <string>	V.Local.sFileExport.Declare</string>
+        <string>	V.Local.bExcel.Declare</string>
+        <string>	V.Local.bFileLocked.Declare</string>
+        <string>	V.Local.sMsg.Declare</string>
+        <string>	V.Local.sForm.Declare(String,"Form")</string>
+        <string>	V.Local.sControl.Declare(String, "GsMain")</string>
+        <string>	V.Local.bChart.Declare</string>
+        <string>	</string>
+        <string>	F.Intrinsic.Control.If(V.Local.bChart,=,False)</string>
+        <string>		F.Automation.MSExcel.CheckPresence(V.Local.bExcel)</string>
+        <string>		F.Intrinsic.Control.If(V.Local.bExcel)</string>
+        <string>			F.Intrinsic.String.Build("{0}\GAB_5676_IssueMaterialDashboard.xlsx",V.Caller.LocalGssTempDir,V.Local.sFileExport)</string>
+        <string>			F.Intrinsic.File.IsFileLocked(V.Local.sFileExport,V.Local.bFileLocked)</string>
+        <string>			F.Intrinsic.Control.If(V.Local.bFileLocked)</string>
+        <string>				F.Intrinsic.String.Build("File is already open. Please close and export again.{0}File: {1}",V.Ambient.NewLine,V.Local.sFileExport,V.Local.sMsg)</string>
+        <string>				F.Intrinsic.UI.Msgbox(V.Local.sMsg,"File In Use")</string>
+        <string>			F.Intrinsic.Control.Else</string>
+        <string>				Gui.Form.GsMain.Export(V.Local.sFileExport,"xlsx")</string>
+        <string>				F.Intrinsic.Task.ShellExec(0,"",V.Local.sFileExport,"","",1)</string>
+        <string>			F.Intrinsic.Control.EndIf</string>
+        <string>		F.Intrinsic.Control.Else</string>
+        <string>			F.Intrinsic.String.Build("{0}\GAB_5676_IssueMaterialDashboard.csv",V.Caller.LocalGssTempDir,V.Local.sFileExport)</string>
+        <string>			F.Intrinsic.File.IsFileLocked(V.Local.sFileExport,V.Local.bFileLocked)</string>
+        <string>			F.Intrinsic.Control.If(V.Local.bFileLocked)</string>
+        <string>				F.Intrinsic.String.Build("File is already open. Please close and export again.{0}File: {1}",V.Ambient.NewLine,V.Local.sFileExport,V.Local.sMsg)</string>
+        <string>				F.Intrinsic.UI.Msgbox(V.Local.sMsg,"File In Use")</string>
+        <string>			F.Intrinsic.Control.Else</string>
+        <string>				Gui.Form.GsMain.Export(V.Local.sFileExport,"csv")</string>
+        <string>			F.Intrinsic.Control.EndIf</string>
+        <string>			F.Intrinsic.Task.ShellExec(0,"",V.Local.sFileExport,"","",1)</string>
+        <string>		F.Intrinsic.Control.EndIf</string>
+        <string>	F.Intrinsic.Control.Else</string>
+        <string>		F.Intrinsic.String.Build("{0}\{1}.jpg",V.Caller.LocalGSSTempDir,V.Local.sControl,V.Local.sFileExport)</string>
+        <string>		Gui.[V.Local.sForm].[V.Local.sControl].ImageToFile("JPEG",V.Local.sFileExport)</string>
+        <string>		F.Intrinsic.Task.ShellExec(0,"Open",V.Local.sFileExport,"","",0)</string>
+        <string>	F.Intrinsic.Control.EndIf</string>
+        <string>	</string>
+        <string>	F.Intrinsic.Control.Catch</string>
+        <string>		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)</string>
+        <string>		F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>		F.Intrinsic.Control.CallSub("Unload")</string>
+        <string>	F.Intrinsic.Control.EndTry</string>
+        <string>Program.Sub.MenuClickExport.End</string>
+        <string />
+        <string>Program.Sub.ClearSorting.Start</string>
+        <string>Gui.Form.GsMain.ClearSorting("gvJobCommitments")</string>
+        <string>Program.Sub.ClearSorting.End</string>
+        <string />
+        <string>Program.Sub.Form_UnLoad.Start</string>
+        <string>f.Intrinsic.Control.CallSub("Unload")</string>
+        <string>Program.Sub.Form_UnLoad.End</string>
+        <string />
+        <string>Program.Sub.UnLoad.Start</string>
+        <string>f.Intrinsic.Control.Try</string>
+        <string>	v.Local.sError.Declare</string>
+        <string />
+        <string>	F.Intrinsic.Control.If(V.ODBC.conx.State,=,1)</string>
+        <string>		F.ODBC.Connection!conx.close</string>
+        <string>	F.Intrinsic.Control.EndIf</string>
+        <string>	</string>
+        <string>	f.Intrinsic.Control.End</string>
+        <string />
+        <string>F.Intrinsic.Control.Catch</string>
+        <string>	f.Intrinsic.String.Build("Subroutine Error {0}{0}Subroutine: {1}{0}Error Occurred {2} with description {3}",V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)</string>
+        <string>	F.Intrinsic.UI.Msgbox(V.Local.sError)</string>
+        <string>	F.Intrinsic.Control.CallSub("Unload")</string>
+        <string>F.Intrinsic.Control.EndTry</string>
+        <string>Program.Sub.UnLoad.End</string>
+        <string />
+        <string>Program.Sub.Comments.Start</string>
+        <string>${$0$}$$}$$}$12:00:00 AM$}$False</string>
+        <string>Program.Sub.Comments.End</string>
+      </Lines>
+    </TextStrings>
+  </TextSource>
+  <Scrolling>
+    <WindowOriginY>290</WindowOriginY>
+  </Scrolling>
+  <Outlining>
+    <AllowOutlining>true</AllowOutlining>
+    <ImageSize>8</ImageSize>
+    <Ranges>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>0</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>19</Y>
+        </EndPoint>
+        <Text>Program.Sub.ScreenSU</Text>
+        <DisplayText>Program.Sub.ScreenSU</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>21</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>23</Y>
+        </EndPoint>
+        <Text>Program.Sub.Preflight</Text>
+        <DisplayText>Program.Sub.Preflight</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>25</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>43</Y>
+        </EndPoint>
+        <Text>Program.Sub.Main</Text>
+        <DisplayText>Program.Sub.Main</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>45</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>56</Y>
+        </EndPoint>
+        <Text>Program.Sub.Refresh</Text>
+        <DisplayText>Program.Sub.Refresh</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>58</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>134</Y>
+        </EndPoint>
+        <Text>Program.Sub.LoadDTJobCommitments</Text>
+        <DisplayText>Program.Sub.LoadDTJobCommitments</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>136</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>241</Y>
+        </EndPoint>
+        <Text>Program.Sub.LoadGVJobCommitments</Text>
+        <DisplayText>Program.Sub.LoadGVJobCommitments</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>243</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>260</Y>
+        </EndPoint>
+        <Text>Program.Sub.GsMain_RowCellClick</Text>
+        <DisplayText>Program.Sub.GsMain_RowCellClick</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>262</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>282</Y>
+        </EndPoint>
+        <Text>Program.Sub.CreateContextMenus</Text>
+        <DisplayText>Program.Sub.CreateContextMenus</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>284</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>330</Y>
+        </EndPoint>
+        <Text>Program.Sub.MenuClickExport</Text>
+        <DisplayText>Program.Sub.MenuClickExport</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>332</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>334</Y>
+        </EndPoint>
+        <Text>Program.Sub.ClearSorting</Text>
+        <DisplayText>Program.Sub.ClearSorting</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>336</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>338</Y>
+        </EndPoint>
+        <Text>Program.Sub.Form_UnLoad</Text>
+        <DisplayText>Program.Sub.Form_UnLoad</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>340</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>355</Y>
+        </EndPoint>
+        <Text>Program.Sub.UnLoad</Text>
+        <DisplayText>Program.Sub.UnLoad</DisplayText>
+        <Visible>true</Visible>
+        <Level>0</Level>
+      </Range>
+      <Range>
+        <StartPoint>
+          <X>0</X>
+          <Y>357</Y>
+        </StartPoint>
+        <EndPoint>
+          <X>2147483647</X>
+          <Y>359</Y>
+        </EndPoint>
+        <Text>Program.Sub.Comments</Text>
+        <DisplayText>Program.Sub.Comments</DisplayText>
+        <Visible>false</Visible>
+        <Level>0</Level>
+      </Range>
+    </Ranges>
+  </Outlining>
+  <HyperText />
+  <Spelling />
+  <Braces />
+</SyntaxEdit>
