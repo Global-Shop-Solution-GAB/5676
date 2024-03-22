@@ -9,7 +9,7 @@ Gui.Form..BackColor(-2147483633)
 Gui.Form..MousePointer(0)
 Gui.Form..Event(UnLoad,Form_UnLoad)
 Gui.Form.GsMain.Create(GsGridControl)
-Gui.Form.GsMain.Size(16305,10155)
+Gui.Form.GsMain.Size(16305,10050)
 Gui.Form.GsMain.Position(75,585)
 Gui.Form.GsMain.Event(RowCellClick,GsMain_RowCellClick)
 Gui.Form.GsMain.Anchor(15)
@@ -25,6 +25,8 @@ V.Global.sRet.Declare
 Program.Sub.Preflight.End
 
 Program.Sub.Main.Start
+'21 Mar 2024 - BixRB
+'Added Finished Good Product Line from Job Header
 f.Intrinsic.Control.Try
 	v.Local.sError.Declare	
 
@@ -87,7 +89,7 @@ f.Intrinsic.Control.Try
 	F.Intrinsic.Control.EndIf	
 	'F.Data.DataTable.CreateFromSQL("dtJobCommitments", "conx", "Select RTrim(A.Part) as Part,A.Location,B.Description,H.Part as MfgPart,H.Product_Line as MfgPL,H.Customer,H.Flag_Hold,H.Priority, A.Job, A.Suffix, N.Notes as Notes, A.Sequence, (A.Qty_Committed - A.Qty_Issued) as QtyRequired, B.Qty_OnHand, A.Date_Due,(B.Qty_OnOrder_Wo + B.Qty_OnOrder_PO) as QtyOnOrder, B.Qty_Required as Total_Required, RTRIM(H.Customer_PO) AS Customer_PO, RTRIM(H.Comments_1) AS Comments_1, RTRIM(H.Comments_2) AS Comments_2 from V_JOB_COMMITMENTS A left join V_Inventory_Mstr B on A.Part = B.Part and A.Location = B.Location left join V_Job_Header H on A.Job = H.Job and A.Suffix = H.Suffix left join GAB_5676_NOTES N on A.Job = N.Job and A.Suffix = N.Suffix and A.Sequence = N.Sequence", True)	
 	'Add Bin to dashboard - 2/18/2021 ALW
-	F.Data.DataTable.CreateFromSQL("dtJobCommitments", "conx", "select B.Bin as Bin, RTrim(A.Part) as Part,A.Location,B.Description,H.Part as MfgPart,H.Product_Line as MfgPL,H.Customer,H.Flag_Hold,H.Priority, A.Job, A.Suffix, N.Notes as Notes, A.Sequence, (A.Qty_Committed - A.Qty_Issued) as QtyRequired, B.Qty_OnHand, A.Date_Due,(B.Qty_OnOrder_Wo + B.Qty_OnOrder_PO) as QtyOnOrder, B.Qty_Required as Total_Required, RTRIM(H.Customer_PO) AS Customer_PO, RTRIM(H.Comments_1) AS Comments_1, RTRIM(H.Comments_2) AS Comments_2 from V_JOB_COMMITMENTS A left join V_Inventory_Mstr B on A.Part = B.Part and A.Location = B.Location left join V_Job_Header H on A.Job = H.Job and A.Suffix = H.Suffix left join GAB_5676_NOTES N on A.Job = N.Job and A.Suffix = N.Suffix and A.Sequence = N.Sequence", True)	
+	F.Data.DataTable.CreateFromSQL("dtJobCommitments", "conx", "select B.Bin as Bin, RTrim(A.Part) as Part,A.Location,B.PRODUCT_LINE as FGPL,B.Description,H.Part as MfgPart,H.Product_Line as MfgPL,H.Customer,H.Flag_Hold,H.Priority, A.Job, A.Suffix, N.Notes as Notes, A.Sequence, (A.Qty_Committed - A.Qty_Issued) as QtyRequired, B.Qty_OnHand, A.Date_Due,(B.Qty_OnOrder_Wo + B.Qty_OnOrder_PO) as QtyOnOrder, B.Qty_Required as Total_Required, RTRIM(H.Customer_PO) AS Customer_PO, RTRIM(H.Comments_1) AS Comments_1, RTRIM(H.Comments_2) AS Comments_2 from V_JOB_COMMITMENTS A left join V_Inventory_Mstr B on A.Part = B.Part and A.Location = B.Location left join V_Job_Header H on A.Job = H.Job and A.Suffix = H.Suffix left join GAB_5676_NOTES N on A.Job = N.Job and A.Suffix = N.Suffix and A.Sequence = N.Sequence", True)	
 	f.Data.DataTable.AddColumn("dtJobCommitments","RunningTotal","Float",0)
 	
 	'Clone
@@ -179,6 +181,7 @@ f.Intrinsic.Control.Try
 	'Width
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Part","MinWidth","160")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Location","MinWidth","25")
+	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","FGPL","MinWidth","30")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Description", "MinWidth","200")	
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPart", "MinWidth","160")	
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPL", "MinWidth","30")	
@@ -200,6 +203,7 @@ f.Intrinsic.Control.Try
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Comments_2", "MinWidth","45")
 	'HeaderHAlignment
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Location", "HeaderHAlignment","center")
+	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","FGPL", "HeaderHAlignment","center")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPL","HeaderHAlignment","center")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Flag_Hold","HeaderHAlignment","center")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Priority", "HeaderHAlignment","center")	
@@ -218,6 +222,7 @@ f.Intrinsic.Control.Try
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Comments_1", "HeaderHAlignment","Center")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Comments_2", "HeaderHAlignment","Center")
 	'Cell Alignment
+	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","FGPL","CellHAlignment","center")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPL","CellHAlignment","center")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Flag_Hold","CellHAlignment","center")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Priority", "CellHAlignment","center")	
@@ -242,6 +247,7 @@ f.Intrinsic.Control.Try
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Total_Required","Caption", "Total Required")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Qty_Onhand","Caption", "On Hand")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Date_Due","Caption", "Due Date")	
+	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","FGPL","Caption", "PL")	
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Location","Caption", "Locn")	
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Sequence","Caption", "Seq")	
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPart","Caption", "Mfg Part")	
@@ -253,6 +259,7 @@ f.Intrinsic.Control.Try
 	'Fixed left
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Part","Fixed","Left")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Location","Fixed","Left")
+	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","FGPL","Fixed","Left")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","Description","Fixed","Left")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPart","Fixed","Left")
 	Gui.Form.GsMain.SetColumnProperty("gvJobCommitments","MfgPL","Fixed","Left")
@@ -429,7 +436,7 @@ V.Local.sSerialize.Declare
 
 Gui.Form.GsMain.Serialize("gvJobCommitments",V.Local.sSerialize)
 
-F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"gvJobCommitments",100500,5676,False,"Serialize",False,0,0,V.Ambient.Date,V.Ambient.Time,V.Local.sSerialize)
+F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"gvJobCommitments",100501,5676,False,"Serialize",False,0,0,V.Ambient.Date,V.Ambient.Time,V.Local.sSerialize)
 
 Program.Sub.Serialize.End
 
@@ -437,7 +444,7 @@ Program.Sub.Deserialize.Start
 
 V.Local.sSerialize.Declare
 
-F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode,"gvJobCommitments",100500,5676,6,"",V.Local.sSerialize)
+F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode,"gvJobCommitments",100501,5676,6,"",V.Local.sSerialize)
 F.Intrinsic.Control.If(V.Local.sSerialize.Trim,<>,"")
 	Gui.Form.GsMain.Deserialize(V.Local.sSerialize)
 F.Intrinsic.Control.EndIf
@@ -446,7 +453,7 @@ Program.Sub.Deserialize.End
 
 Program.Sub.ResetFormatting.Start
 
-F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"gvJobCommitments",100500,5676,False,"Serialize",False,0,-999.0,1/1/1980,12:00:00 AM,"")
+F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"gvJobCommitments",100501,5676,False,"Serialize",False,0,-999.0,1/1/1980,12:00:00 AM,"")
 Gui.Form.GsMain.Visible(False)
 Gui.Form.GsMain.SuspendLayout()
 F.Intrinsic.Control.CallSub(LoadDTJobCommitments)
@@ -458,7 +465,7 @@ Program.Sub.ResetFormatting.End
 Program.Sub.Comments.Start
 ${$0$}$$}$$}$12:00:00 AM$}$False
 ${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$ShippingDashPickList.rpt report required
-${$5$}$20.1.8305.18039$}$1
-${$6$}$lperrine$}$20230207142400888$}$2NUFt80QpM3hrjXY+iDnxks7M/ROcjnGi1JQc8MYUEcTBDOs6uqCcowQ/alMgPbxscVDsFxzd1Bw1wYTWf5qOQ==
+${$5$}$20.1.8819.26349$}$1
+${$6$}$bbaker$}$20240321151334248$}$pM7xsHplA2E9VCTenDTJ47gi1rF/t66W0Wa0CFH+k+K3zgbJz9KfwXt0If99oQilwG7Y58Cmg5Q=
 Program.Sub.Comments.End
 
